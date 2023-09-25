@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quote_font"
+                android:padding="8dp"
+                android:text="This is a quote"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Author Name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/button_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Copy" />
+
+            <ImageButton
+                android:id="@+id/button_share"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/baseline_share_24"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/button_favorite"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
